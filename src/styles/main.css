@@ -1,0 +1,109 @@
+@import url('./reset.css');
+@import url('./variables.css');
+@import url('./container.css');
+@import url('./navbar.css');
+@import url('./hero.css');
+@import url('./steps.css');
+@import url('./requirements.css');
+@import url('./footer.css');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--font-base);
+  cursor: none;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+}
+
+h1 {
+  font-size: var(--font-lead);
+}
+
+h2 {
+  font-size: var(--font-lg);
+}
+
+h3 {
+  font-size: var(--font-md-lg);
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  cursor: none;
+  position: relative;
+  color: var(--accent-color);
+}
+
+a::after {
+  content: ""; 
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0; 
+  height: 2px; 
+  background-color: currentColor; 
+  border-radius: 1px;
+  transition: width 0.3s ease; 
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 1rem;
+  aspect-ratio: 1 / 1;
+  background-color: var(--cursor-color);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1000;
+  transition: background-color 0.15s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .custom-cursor {
+    display: none;
+  }
+
+  body {
+    cursor: auto;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  .copy-to-clipboard-button {
+    cursor: pointer;
+  }
+}
+
+.toolbar {
+  top: 0.5rem !important;
+  right: 1.5rem !important;
+}
+
+.copy-to-clipboard-button {
+  cursor: none;
+  right: 1rem;
+  background: var(--background-color) !important;
+  color: var(--foreground-color) !important;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: var(--accent-color) !important;
+    color: var(--background-color) !important;
+  }
+}
+
+pre[class*="language-"] {
+  overflow: auto;
+  max-height: 90svh;
+  max-height: 90vh;
+}
