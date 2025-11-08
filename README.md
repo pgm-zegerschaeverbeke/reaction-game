@@ -19,10 +19,10 @@ Aan het einde heb je een volledig werkende reaction game met score, game over me
 ![Eindresultaat van de reaction game](/src/assets/images/thumbnail-reaction-game.webp)
 
 👉 Bekijk de live versie via **GitHub Pages**:   
-https://pgmgent-atwork2.github.io/project-1-workshop-start-to-code-zeger/
+https://pgm-zegerschaeverbeke.github.io/reaction-game/
 
 🎮 **Speel de Reaction Game hier**:  
-https://pgmgent-atwork2.github.io/project-1-workshop-start-to-code-zeger/demo/
+https://pgm-zegerschaeverbeke.github.io/reaction-game/demo/
 
 
 
